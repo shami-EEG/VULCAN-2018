@@ -1,0 +1,18 @@
+
+D                    = 
+CXX                  = g++
+GXX-VERSION          = gcc4.1
+GXX-VERSION-DETAILED = gcc4.1.2
+CC                   = g++
+CC-VERSION           = gcc4.1
+SHLIBLD              = g++
+LDFLAGS              = -g -lm -lgsl -lgslcblas -lgfortran -lgfortranbegin -fopenmp -Wall -pedantic
+F95                  = gfortran
+F95-VERSION          = gcc4.1
+LIBS                 = 
+OBJDIR               = obj/
+OBJEXT               = o
+FFLAGS               = -g -c -fbounds-check -fdefault-real-8 -fdefault-double-8 -lgfortran -lgfortranbegin 
+CXXFLAGS             = -Df2cFortran -g -c -Wall -lgsl -fopenmp -pedantic -std=gnu++11
+CCFLAGS              = -g -c -Wall -lgsl -fopenmp -pedantic
+EXECUTABLE_NAME      = fastchem_test

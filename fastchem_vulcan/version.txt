@@ -1,0 +1,2 @@
+This is the new version using the long double precision (same as fastchem_new_shami)
+but remove most of the unused elements.

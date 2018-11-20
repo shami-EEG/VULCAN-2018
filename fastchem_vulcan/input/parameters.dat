@@ -1,0 +1,9 @@
+element_abundances   chemistry/elements/element_abundances_vulcan.dat
+element_file         input/chem_input/chemical_elements.dat
+species_data_file    input/nasa9_logK_NCHOTi.dat
+accuracy             1.0e-4
+accuracy_delta       1.0e-3
+newton_err           1.0e-4
+iter_max               5000  
+k_max                  5000
+mu_max                10000

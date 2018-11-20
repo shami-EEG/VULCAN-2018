@@ -1,0 +1,11 @@
+#FastChem parameter file
+input/parameters.dat
+
+#Atmospheric profile input file
+input/vulcan_TP/vulcan_TP.dat
+
+#Abundances output file
+output/vulcan_EQ.dat
+
+#Monitor output file
+output/monitor_output.dat

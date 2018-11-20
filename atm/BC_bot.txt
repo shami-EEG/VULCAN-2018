@@ -1,0 +1,4 @@
+#species flux [cm-2 s-1]   v_dep [cm s-1]      mexing ratios
+He            0                 0                0.136
+CH4           0                 0                1.81E-3
+CO            0                 0                8E-10
