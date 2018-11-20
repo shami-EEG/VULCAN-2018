@@ -56,6 +56,10 @@ import scipy.optimize as sop
 import time, timeit, os, sys
 import ast
 
+# running prepipe to construch chem_funs.py
+print ('Running prepipe...')
+os.system('python prepipe.py')
+
 # import VULCAN modules
 import store, build_atm, op
 try: import chem_funs
@@ -65,7 +69,6 @@ except:
 # import the configuration inputs
 import vulcan_cfg
 from phy_const import kb, Navo
-
 
 # Setting the current working directory to the script location
 abspath = os.path.abspath(sys.argv[0])

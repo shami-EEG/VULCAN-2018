@@ -44,10 +44,10 @@ tran = {}
 for index, data in enumerate(data_list):
     tran[index] = np.genfromtxt(data,dtype=float,skip_header=1, names = ['lambda','R'])
     
-    plt.plot(tran[index]['lambda'], 100*(tran[index]['R']/r_sun)**2, color=colors[index], label=label_list[index], lw=1, alpha=0.7)
+    plt.plot(tran[index]['lambda'], 100*(tran[index]['R']/r_sun)**2, color=colors[index], label=label_list[index], lw=1, alpha=0.5)
         
 plt.gca().set_xscale('log') 
-plt.xlim((1,10.01))
+plt.xlim((1,6.01))
 #plt.xticks([1,5,10])
 plt.gca().xaxis.set_major_formatter(mtick.FormatStrFormatter('%i'))
 plt.gca().xaxis.set_minor_formatter(mtick.NullFormatter())

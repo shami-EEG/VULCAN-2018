@@ -1429,8 +1429,9 @@ class ODESolver(object):
             # summing all branches
             for nbr in range(1, n_branch[sp]+1):
                 var.J_sp[(sp, 0)] += var.J_sp[(sp, nbr)]
-                # incoperating J into rate coefficients 
-                var.k[ var.pho_rate_index[(sp, nbr)]  ] = var.J_sp[(sp, nbr)]
+                # incoperating J into rate coefficients
+                if var.pho_rate_index[(sp, nbr)] not in vulcan_cfg.remove_list: 
+                    var.k[ var.pho_rate_index[(sp, nbr)]  ] = var.J_sp[(sp, nbr)]
                                
                 
                 # # for single branch photolysis e.g. N2 -> N + N
@@ -1680,6 +1681,11 @@ class Output(object):
     def print_prog(self, var):
         print ('time: ' +str("{:.2e}".format(var.t)) + '  and dt= ' + str(var.dt) )
         print ('longdy=' + str(var.longdy) + ' and longdy/dt= ' + str(var.longdydt) )
+        
+        # TEST
+        print ('dn/dt =')
+        print ('dn/dt =')
+        
         print ('------------------------------------------------------' )
 
     def print_end_msg(self, var, para ): 

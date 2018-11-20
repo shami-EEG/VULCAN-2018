@@ -73,7 +73,7 @@ class Variables(object):
         
         # User define what to save!
         self.var_save = ['k','y','ymix','ysum','y_ini','y_conden','t','dt','longdy','longdydt',\
-        'atom_ini','atom_sum','atom_loss','atom_conden','aflux_change'] 
+        'atom_ini','atom_sum','atom_loss','atom_conden','aflux_change','Rf'] 
         if vulcan_cfg.use_photo == True: self.var_save.extend(['nbin','bins','dbin','tau','sflux','aflux','cross','cross_scat','cross_J', 'J_sp','wavelen','n_branch','br_ratio'])
         #self.var_evol_save = ['ymix_time','t_time','atom_loss_time']
         self.var_evol_save = []

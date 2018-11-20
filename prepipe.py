@@ -697,7 +697,7 @@ def check_conserv():
             conserv_check = False
             
     if conserv_check == True: 
-        print ('Elements conserved in the network.')
+        print ('Elements conserved in the network.\n')
     else:
         raise IOError ('\nElements are not conserved in the reaction. Check the network!')
             
