@@ -16,7 +16,7 @@ gibbs_text = 'thermo/gibbs_text.txt'
 cross_folder = 'thermo/leiden_cross/'
 com_file = 'thermo/all_compose.txt'
 atm_file = 'atm/atm_HD189_Kzz.txt'
-sflux_file = 'atm/flux-HD189_Moses11.txt' # HD189_Moses11.txt #VPL_solar.txt # This is the flux at the stellar surface
+sflux_file = 'atm/sflux/flux-HD189_Moses11.txt' # HD189_Moses11.txt #VPL_solar.txt # This is the flux at the stellar surface
 top_BC_mix_file = 'atm/BC_top.txt'
 bot_BC_mix_file = 'atm/BC_bot.txt'
 vul_ini = 'output/moses_HD189.vul'
@@ -152,7 +152,7 @@ flux_atol = 1. # the tol for actinc flux (# photons cm-2 s-1 nm-1)
 count_max = int(1E5)
 
 # ====== Setting up numerical parameters for Ros2 ODE solver ====== 
-rtol = 0.05
+rtol = 0.1
 
 # ====== Setting up numerical parameters for SemiEu/SparSemiEU ODE solver ====== 
 PItol = 0.1

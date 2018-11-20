@@ -3,11 +3,10 @@ Chemical kinetics for exoplanetary atmospheres, a fast and easy-to-use python co
 
 The theory paper of VULCAN can be found at https://arxiv.org/abs/1607.00409
 
-This is currectly a working, beta version. Any questions or feedbacks is welcome and can be sent to [Shami Tsai](mailto:shang-min.tsai@space.unibe.ch)
+This is currectly a working, beta version. Any questions or feedbacks are welcome and can be sent to [Shami Tsai](mailto:shang-min.tsai@space.unibe.ch)
 
 ## Requirements
-VULCAN is developed with Python 2.7 and does _not_ work with Python 3. A python 3.X compatible branch will be released later.
-For the moment, if you are only using  Python 3, it is easiest to create a separated Python 2 evniorment with an environment manager, e.g. [Anaconda](https://docs.continuum.io/).
+VULCAN is developed with Python 3. It is easy to create a separate Python environment with an environment manager, e.g. [Anaconda](https://docs.continuum.io/).
 
 VULCAN requires the following python packages:
 - numpy
@@ -31,7 +30,11 @@ PIL or Pillow is a plotting library. If installed, the plots will be convenientl
 
 Let's dive in and see how disequilibrium chemistry works!
 
-Go to the main folder of VULCAN, run 
+Go to the folder <fastchem_vulcan>, run
+```
+make all 
+```
+Then go to the main folder of VULCAN, run 
 ```
 python vulcan.py 
 ```
@@ -126,6 +129,8 @@ Finally, run ```prepipe.py``` as described before.
 VULCAN is distributed under the terms of the GNU General Public License (GPL) license. For more information, see ```GPL_license.txt``` in the main directory.
 
 ## Remarks
+The TEA compendium to reproduce Figure 2. in [Tsai et al. (2017)](https://arxiv.org/abs/1607.00409) can be found [here](https://github.com/exoclime/RRC-Tsai-2017-ApJS-VULCAN).
+
 The project is financially support from the Center for Space and Habitability (CSH), the PlanetS NCCR framework and the Swiss- based MERAC Foundation.
 The Exoclime Simulation Platform ([ESP][1]) develops a set of open-source codes
 for research on exoplanets. The three parts of the ESP are
