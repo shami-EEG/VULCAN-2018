@@ -1360,7 +1360,7 @@ class ODESolver(object):
         # the change of the actinic flux
         var.aflux_change = np.nanmax( np.abs(var.aflux-var.prev_aflux)[var.aflux>vulcan_cfg.flux_atol]/var.aflux[var.aflux>vulcan_cfg.flux_atol] )
         
-        print ('aflux change: ' + '{:.4E}'.format(var.aflux_change) )
+        #print ('aflux change: ' + '{:.4E}'.format(var.aflux_change) )
         
         
         
